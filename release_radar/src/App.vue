@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Hallo to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/RRLogo.png">
+  <HelloWorld msg="Release Radar"/>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
   }
 }
 </script>
-
+ 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
