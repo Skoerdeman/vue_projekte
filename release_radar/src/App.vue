@@ -1,26 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/RRLogo.png">
-  <HelloWorld msg="Release Radar"/>
+  <div class="max-w-7xl mx-auto"/>
+  <MainPage msg="Release Radar"/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainPage
   }
 }
 </script>
- 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+
