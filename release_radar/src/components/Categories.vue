@@ -3,8 +3,8 @@
     <nav>
       <ul>
         <img src="../assets/RRLogo.png">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="./MainPage.vue">Home</a></li>
+        <li><a href="./Categories.vue">Categories</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>

@@ -3,15 +3,15 @@
     <nav>
       <ul>
         <img src="../assets/RRLogo.png">
-        <li><a href="#">Home</a></li>
-        <li><a href="./Categories.vue">Categories</a></li>
+        <li><a href="./MainPage.vue">Home</a></li>
+        <li><router-link to="/categories">Categories</router-link></li>
         <li><a href="#">Platform</a></li>
       </ul>
     </nav>
     
     <div class="container">
       <div v-for="box in topRelease" :key="box.id" class="topRelease">
-        <img :src="box.image" alt="Box Image">
+        <img :src="box.topRelease" alt="Box Image">
       </div>
     </div>
 
@@ -33,11 +33,18 @@ export default {
         { id: 2, image: 'https://via.placeholder.com/150' },
         { id: 3, image: 'https://via.placeholder.com/150' },
         { id: 4, image: 'https://via.placeholder.com/150' },
-        { id: 5, image: 'https://via.placeholder.com/150' }
+        { id: 5, image: 'https://via.placeholder.com/150' },
+        { id: 6, image: 'https://via.placeholder.com/150' },
+        { id: 7, image: 'https://via.placeholder.com/150' },
+        { id: 8, image: 'https://via.placeholder.com/150' },
+        { id: 9, image: 'https://via.placeholder.com/150' },
+        { id: 10, image: 'https://via.placeholder.com/150' },
+        { id: 11, image: 'https://via.placeholder.com/150' },
+        { id: 12, image: 'https://via.placeholder.com/150' }
       ],
 
       topRelease:[
-          { id: 1, image: 'https://via.placeholder.com/150' }
+          { id: 0, image: 'https://via.placeholder.com/150' }
       ]
     }
   }
@@ -73,10 +80,10 @@ nav a {
 }
 
 img{
-  width: 80px;
-  height: 80px;
-  padding: 10px;
-  margin-top: 0.5px;
+  width: 180px;
+  height: 180px;
+  margin-left: 60px;
+  margin-top: 30px;
 }
 
 .container {
@@ -90,13 +97,23 @@ img{
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px;
+  height: 300px;
+  width: 300px;
 }
 
-topRelease{
+.topRelease{
   border: 2px solid #ccc;
   padding: 10px;
   margin: 10px;
-  
+  height: 600px;
+  width: 2000px;
+}
+
+box.image{
+  width: 180px;
+  height: 180px;
+  margin-left: 60px;
+  margin-top: 30px;
 }
 
 

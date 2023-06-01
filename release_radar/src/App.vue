@@ -1,18 +1,12 @@
-<template>
-  <div class="max-w-7xl mx-auto"/>
-  <MainPage msg="Release Radar"/>
+<script setup>
+import {useRouter} from 'vue-router'
 
-</template>
-
-<script>
-import MainPage from './components/MainPage.vue'
-
-export default {
-  name: 'App',
-  components: {
-    MainPage
-  }
-}
+const router = useRouter();
+router.push('/')
 </script>
 
-
+<template>
+    <div>
+        <router-view></router-view>
+    </div>
+</template>
